@@ -1,4 +1,4 @@
-FROM xujif/docker-php7-cli:latest
+FROM xujif/php7-cli:latest
 MAINTAINER xujif <i@xujif.com>
 RUN yum install -y php70w-fpm
 RUN yum clean all
