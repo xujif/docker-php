@@ -6,7 +6,6 @@ RUN yum install -y php70w \
 					php70w-bcmath \
 					php70w-cli \
 					php70w-common \
-					php70w-devel \ 
 					php70w-gd \ 
 					php70w-mbstring \
 					php70w-mcrypt \ 
