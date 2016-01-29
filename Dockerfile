@@ -18,7 +18,7 @@ RUN yum install -y php70w \
 					php70w-soap \
 					php70w-tidy \
 					php70w-xml
-RUN yum yum clean all
+RUN yum clean all
 ADD mongodb.so /usr/lib64/php/modules/
 ADD mongodb.ini /etc/php.d/
 CMD ['php','-v']
