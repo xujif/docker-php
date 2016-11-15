@@ -1,4 +1,4 @@
-FROM xujif/php7-cli:latest
+FROM xujif/php7-cli:7.0
 MAINTAINER xujif <i@xujif.com>
 RUN yum update -y
 RUN yum install -y php70w-fpm
