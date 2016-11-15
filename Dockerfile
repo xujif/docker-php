@@ -1,6 +1,7 @@
 FROM centos:6
 MAINTAINER xujif <i@xujif.com>
 RUN rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
+RUN rpm -Uvh http://mirrors.hust.edu.cn/epel//5/x86_64/epel-release-5-4.noarch.rpm
 RUN yum update -y
 RUN yum install -y php70w \
 					php70w-bcmath \
