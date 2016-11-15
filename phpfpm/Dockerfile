@@ -1,5 +1,6 @@
 FROM xujif/php7-cli:latest
 MAINTAINER xujif <i@xujif.com>
+RUN yum update -y
 RUN yum install -y php70w-fpm
 RUN yum clean all
 RUN sed -i "s/;date.timezone =.*/date.timezone = UTC+8/" /etc/php.ini  && \
