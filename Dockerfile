@@ -21,4 +21,5 @@ RUN yum install -y php70w \
 RUN yum clean all
 ADD mongodb.so /usr/lib64/php/modules/
 ADD mongodb.ini /etc/php.d/
+
 ENTRYPOINT  ["/usr/bin/php"]
