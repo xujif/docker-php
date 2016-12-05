@@ -3,8 +3,7 @@ MAINTAINER xujif <i@xujif.com>
 RUN yum update -y
 RUN yum install -y php70w-fpm
 RUN yum clean all
-RUN sed -i "s/;date.timezone =.*/date.timezone = UTC+8/" /etc/php.ini  && \
-    sed -i "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/" /etc/php.ini  && \
+RUN sed -i "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/" /etc/php.ini  && \
     sed -i "s/^display_errors.*$/display_errors = stderr/" /etc/php.ini  && \
     sed -i "s/^upload_max_filesize.*$/upload_max_filesize = 32M/" /etc/php.ini && \
     sed -i "s/;opcache.enable.*$/opcache.enable=1/" /etc/php.ini && \
